@@ -18,18 +18,9 @@
     "image": "https://marcelcato.github.io/profile.png",
     "url": "https://marcelcato.github.io",
     "jobTitle": "Politics Student",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "NYU Stern School of Business – DART"
-    },
-    "memberOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "New York University"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Uncommon Collegiate Charter High School"
-    },
+    "worksFor": { "@type": "Organization", "name": "NYU Stern School of Business – DART" },
+    "memberOf": { "@type": "CollegeOrUniversity", "name": "New York University" },
+    "alumniOf": { "@type": "EducationalOrganization", "name": "Uncommon Collegiate Charter High School" },
     "affiliation": [
       { "@type": "Organization", "name": "Find Community Connection Project" },
       { "@type": "Organization", "name": "NYU Stern School of Business – DART" },
@@ -43,21 +34,23 @@
     "description": "Marcel Cato is a Politics student at NYU focused on diplomacy and public service. He has served in donor relations, nonprofit leadership, IT administration, and election facilitation, with recognitions from the NYC Council and FCCP for civic impact and professionalism."
   }
   </script>
-</head>
-<script>
-  // When page loads, reveal fade-in elements
-  document.addEventListener("DOMContentLoaded", () => {
-    const faders = document.querySelectorAll('.fade-in');
-    faders.forEach((el, i) => {
-      setTimeout(() => {
-        el.classList.add('visible');
-      }, i * 150); // stagger effect
+
+  <!-- Animation trigger -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const faders = document.querySelectorAll('.fade-in');
+      faders.forEach((el, i) => {
+        setTimeout(() => {
+          el.classList.add('visible');
+        }, i * 150);
+      });
     });
-  });
-</script>
+  </script>
+</head>
+
 <body>
   <!-- === HERO BANNER SECTION === -->
-  <header class="hero-banner">
+  <header class="hero-banner fade-in">
     <div class="hero-content">
       <img src="profile.png" alt="Portrait of Marcel Cato" class="hero-pic">
       <div class="hero-text">
@@ -70,7 +63,8 @@
   <div class="container">
     <hr />
 
-    <section>
+    <!-- === ABOUT SECTION === -->
+    <section class="fade-in">
       <h2>About Me</h2>
       <p>
         I'm a Politics student at NYU, passionate about public service, diplomacy, and equitable urban development. As a first-generation college student from a single-parent immigrant household, I've grown committed to building systems that nurture potential. I’ve worked across nonprofit leadership, alumni relations, and election operations — each step preparing me for a future in public leadership.
@@ -79,7 +73,8 @@
 
     <hr />
 
-    <section>
+    <!-- === EXPERIENCE SECTION === -->
+    <section class="fade-in">
       <h2>Experience</h2>
       <ul>
         <li><strong>Student Intern – NYU Stern School of Business (DART)</strong><br/>Supported donor records, events, and alumni communications at one of NYU's premier development offices.</li>
@@ -91,7 +86,8 @@
 
     <hr />
 
-    <section>
+    <!-- === CONNECT SECTION === -->
+    <section class="fade-in">
       <h2>Connect</h2>
       <ul class="link-list">
         <li><a href="https://www.linkedin.com/in/marcelcato" target="_blank">LinkedIn</a></li>
