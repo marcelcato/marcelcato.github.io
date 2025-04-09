@@ -2,7 +2,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
-  color: #1c2c48;
+  color: #18171C;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -38,7 +38,7 @@ h2 {
   margin-bottom: 10px;
   border-bottom: 2px solid #d6d9db;
   padding-bottom: 5px;
-  color: #1c2c48;
+  color: #18171C;
 }
 
 p {
@@ -60,7 +60,7 @@ ul li {
 }
 
 a {
-  color: #1c2c48;
+  color: #18171C;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.2s ease-in-out;
@@ -81,7 +81,7 @@ a:hover {
 
 /* === HERO BANNER SECTION === */
 .hero-banner {
-  background-color: #1c2c48;
+  background-color: #18171C;
   color: white;
   padding: 40px 20px;
   text-align: center;
