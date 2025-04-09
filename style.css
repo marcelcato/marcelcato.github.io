@@ -185,3 +185,13 @@ a:hover {
   opacity: 1;
   transform: scale(1.08);
 }
+
+
+@media (min-width: 768px) {
+  .hero-full {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+}
