@@ -44,6 +44,17 @@
   }
   </script>
 </head>
+<script>
+  // When page loads, reveal fade-in elements
+  document.addEventListener("DOMContentLoaded", () => {
+    const faders = document.querySelectorAll('.fade-in');
+    faders.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 150); // stagger effect
+    });
+  });
+</script>
 <body>
   <!-- === HERO BANNER SECTION === -->
   <header class="hero-banner">
