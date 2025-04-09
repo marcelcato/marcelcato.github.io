@@ -126,8 +126,6 @@ a:hover {
 }
 
 /* === ANIMATIONS === */
-
-/* Fade-in from below */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -139,7 +137,6 @@ a:hover {
   }
 }
 
-/* General fade-in class */
 .fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
@@ -147,7 +144,6 @@ a:hover {
 .visible {
   opacity: 1 !important;
 }
-
 
 /* === CATO SEAL (WATERMARK STYLE) === */
 .cato-seal {
@@ -172,27 +168,30 @@ a:hover {
   transform: scale(1.08);
 }
 
-
-/* === FULLSCREEN HERO SECTION === */
+/* === FULLSCREEN HERO SECTION (PARALLAX WITH FULL IMAGE) === */
 .hero-full {
   position: relative;
-  background-image: url('profile.png');
-  background-size: cover;
-  background-position: center top;
   height: 100vh;
   width: 100%;
+  background: url('hero-full.png') center bottom no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: #18171C;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .hero-overlay {
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   padding: 20px 40px;
   border-radius: 8px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  max-width: 90%;
+  z-index: 2;
 }
 
 .hero-overlay h1 {
@@ -213,7 +212,7 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(24, 23, 28, 0.95); /* dark navy with slight transparency */
+  background-color: rgba(24, 23, 28, 0.95);
   padding: 12px 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -241,3 +240,11 @@ a:hover {
   color: #d4af37;
 }
 
+/* === MOBILE FIX FOR HERO === */
+@media (max-width: 768px) {
+  .hero-full {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+}
