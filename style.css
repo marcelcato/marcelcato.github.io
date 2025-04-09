@@ -147,3 +147,28 @@ a:hover {
 .visible {
   opacity: 1 !important;
 }
+
+
+/* === CATO SEAL (WATERMARK STYLE) === */
+.cato-seal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  z-index: 10;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cato-seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cato-seal:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+<a href="https://marcelcato.github.io" class="cato-seal" aria-label="Back to Home">
