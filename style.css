@@ -1,19 +1,100 @@
 /* === GLOBAL SITE STYLING === */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  color: #18171C;
+  background-color: #18171C;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-/* === LAYOUT === */
+/* === FLOATING NAVIGATION BAR === */
+.floating-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(24, 23, 28, 0.95);
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.floating-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.floating-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.floating-nav a:hover {
+  color: #d4af37;
+}
+
+/* === HERO SECTION WITH FULL PORTRAIT === */
+.hero-full {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('hero-full.png') center top no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+}
+
+.hero-full::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(24,23,28,0.1) 60%, rgba(24,23,28,1));
+  z-index: 1;
+}
+
+/* === HERO TEXT OVERLAY === */
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 25px 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  color: #d4af37;
+}
+
+/* === PAGE CONTENT === */
 .container {
   max-width: 700px;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
+  background-color: #ffffff;
+  color: #18171C;
 }
 
 hr {
@@ -23,15 +104,6 @@ hr {
 }
 
 /* === TEXT STYLES === */
-h1 {
-  font-size: 2.5rem;
-  margin: 10px 0;
-  color: white;
-  border-bottom: 2px solid #d4af37;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
 h2 {
   font-size: 1.75rem;
   margin-top: 40px;
@@ -79,52 +151,6 @@ a:hover {
   margin: 10px 0;
 }
 
-/* === HERO BANNER SECTION === */
-.hero-banner {
-  background-color: #18171C;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.hero-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid white;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.hero-pic:hover {
-  transform: scale(1.05);
-}
-
-.hero-text h1 {
-  font-size: 2.3rem;
-  margin: 0;
-  color: white;
-  border-bottom: 2px solid #d4af37;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.hero-text p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #d4af37;
-}
-
 /* === ANIMATIONS === */
 @keyframes fadeInUp {
   0% {
@@ -152,7 +178,7 @@ a:hover {
   right: 20px;
   width: 48px;
   height: 48px;
-  z-index: 10;
+  z-index: 100;
   opacity: 0.6;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -166,87 +192,4 @@ a:hover {
 .cato-seal:hover {
   opacity: 1;
   transform: scale(1.08);
-}
-
-/* === FULLSCREEN HERO SECTION (PARALLAX WITH FULL IMAGE) === */
-.hero-full {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background: 
-    linear-gradient(to right, #18171C 0%, rgba(24, 23, 28, 0.95) 20%, rgba(24, 23, 28, 0) 50%, rgba(24, 23, 28, 0.95) 80%, #18171C 100%),
-    url('hero-full.png') center bottom no-repeat;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-color: #18171C;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-.hero-overlay {
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 20px 40px;
-  border-radius: 8px;
-  backdrop-filter: blur(6px);
-  max-width: 90%;
-  z-index: 2;
-}
-
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #d4af37;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.hero-overlay p {
-  font-size: 1.2rem;
-  color: #d4af37;
-}
-
-/* === FLOATING NAVIGATION BAR === */
-.floating-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(24, 23, 28, 0.95);
-  padding: 12px 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: center;
-}
-
-.floating-nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.floating-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
-}
-
-.floating-nav a:hover {
-  color: #d4af37;
-}
-
-/* === MOBILE FIX FOR HERO === */
-@media (max-width: 768px) {
-  .hero-full {
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-  }
 }
