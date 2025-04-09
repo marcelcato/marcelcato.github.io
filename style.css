@@ -144,4 +144,6 @@ a:hover {
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
-
+.visible {
+  opacity: 1 !important;
+}
