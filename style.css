@@ -176,7 +176,7 @@ a:hover {
 /* === FULLSCREEN HERO SECTION === */
 .hero-full {
   position: relative;
-  background-image: url('hero-full.png');
+  background-image: url('profile.png');
   background-size: cover;
   background-position: center top;
   height: 100vh;
