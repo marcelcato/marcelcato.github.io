@@ -41,39 +41,30 @@ body {
   color: #d4af37;
 }
 
-/* === FULLSCREEN HERO SECTION (PARALLAX STYLE) === */
+/* === FULLSCREEN HERO SECTION WITH SCROLL EFFECT === */
 .hero-full {
   position: relative;
-  background-image: url('hero-full.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-attachment: fixed;
   height: 100vh;
   width: 100%;
+  background: url('hero-full.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
-}
-
-/* Fallback for mobile where background-attachment: fixed can behave oddly */
-@media (max-width: 768px) {
-  .hero-full {
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
-  }
+  overflow: hidden;
 }
 
 .hero-overlay {
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 40px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
-  z-index: 2;
+  max-width: 90%;
 }
 
 .hero-overlay h1 {
@@ -88,7 +79,6 @@ body {
   font-size: 1.2rem;
   color: #d4af37;
 }
-
 /* === TEXT STYLES === */
 h2 {
   font-size: 1.75rem;
