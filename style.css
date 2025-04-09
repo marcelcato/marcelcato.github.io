@@ -1,73 +1,51 @@
 /* === GLOBAL SITE STYLING === */
-/* Applies base font, text color, background color, and spacing for the whole page */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #ffffff; /* white background for a clean, professional look */
-  color: #1c2c48; /* dark navy text for clarity and contrast */
+  background-color: #ffffff;
+  color: #1c2c48;
   margin: 0;
   padding: 0;
-  line-height: 1.6; /* better vertical spacing between lines */
+  line-height: 1.6;
 }
 
-/* === MAIN LAYOUT CONTAINER === */
-/* Centers your content and sets a max width for better readability */
+/* === LAYOUT === */
 .container {
   max-width: 700px;
-  margin: 0 auto; /* centers the container horizontally */
-  padding: 40px 20px; /* spacing around the content */
-  text-align: center; /* centers text inside most elements */
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* === PROFILE IMAGE STYLING === */
-/* Circular image with navy border for polish */
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%; /* makes the image a circle */
-  object-fit: cover; /* ensures the image doesn't stretch */
-  margin-bottom: 20px;
-  border: 3px solid #1c2c48; /* dark navy border */
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #d6d9db;
 }
 
-/* === HEADLINE (Your Name) === */
-/* Large, bold headline with optional underline */
+/* === TEXT STYLES === */
 h1 {
   font-size: 2.5rem;
   margin: 10px 0;
-  color: #1c2c48;
-  /* Optional: Uncomment below to add gold underline */
-  /* border-bottom: 2px solid #d4af37;
-     display: inline-block;
-     padding-bottom: 5px; */
+  color: white;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-/* === SECTION HEADERS (e.g., About, Experience) === */
-/* Smaller headline with steel-gray underline */
 h2 {
   font-size: 1.75rem;
   margin-top: 40px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #d6d9db; /* light gray bottom border */
+  border-bottom: 2px solid #d6d9db;
   padding-bottom: 5px;
   color: #1c2c48;
 }
 
-/* === SUB-HEADLINE (Tagline) === */
-h3 {
-  color: #555; /* softer gray */
-  font-weight: normal;
-  margin-bottom: 30px;
-}
-
-/* === PARAGRAPH TEXT === */
-/* Adds spacing and alignment to body text */
 p {
-  text-align: justify; /* evenly aligned on both sides */
+  text-align: justify;
   padding: 0 10px;
 }
 
-/* === LISTS FOR EXPERIENCE + LINKS === */
-/* Removes bullets and keeps lists tidy */
 ul {
   list-style-type: none;
   padding: 0;
@@ -75,16 +53,12 @@ ul {
   max-width: 90%;
 }
 
-/* === INDIVIDUAL LIST ITEMS === */
-/* Spaced and aligned left for professionalism */
 ul li {
   margin-bottom: 20px;
   text-align: left;
   padding-left: 10px;
 }
 
-/* === LINK STYLING === */
-/* Default: navy; Hover: gold underline and color */
 a {
   color: #1c2c48;
   text-decoration: none;
@@ -94,10 +68,9 @@ a {
 
 a:hover {
   border-bottom: 1px solid #d4af37;
-  color: #d4af37; /* light gold highlight on hover */
+  color: #d4af37;
 }
 
-/* === GROUPED LINK LIST (e.g., Resume, LinkedIn) === */
 .link-list {
   padding-top: 10px;
 }
@@ -106,36 +79,16 @@ a:hover {
   margin: 10px 0;
 }
 
-/* === SECTION DIVIDERS === */
-/* Creates subtle lines between content areas */
-hr {
-  margin: 40px 0;
-  border: none;
-  border-top: 1px solid #d6d9db;
-}
-
-/* === OPTIONAL BACKGROUND BLOCKS FOR SECTIONS === */
-/* Uncomment this to alternate section background color for contrast */
-/*
-section:nth-of-type(even) {
-  background-color: #f5f6f7;
-  padding: 30px 15px;
-  border-radius: 6px;
-}
-*/
-
-
 /* === HERO BANNER SECTION === */
-/* Creates the top banner with your profile and tagline */
 .hero-banner {
-  background-color: #1c2c48; /* dark navy */
+  background-color: #1c2c48;
   color: white;
   padding: 40px 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* subtle drop shadow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-/* Flexbox for layout inside banner */
 .hero-content {
   display: flex;
   align-items: center;
@@ -144,7 +97,6 @@ section:nth-of-type(even) {
   gap: 30px;
 }
 
-/* Profile pic inside banner */
 .hero-pic {
   width: 120px;
   height: 120px;
@@ -155,18 +107,20 @@ section:nth-of-type(even) {
 }
 
 .hero-pic:hover {
-  transform: scale(1.05); /* slight zoom on hover */
+  transform: scale(1.05);
 }
 
-/* Text beside image */
 .hero-text h1 {
   font-size: 2.3rem;
   margin: 0;
   color: white;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .hero-text p {
   margin-top: 10px;
   font-size: 1.1rem;
-  color: #d4af37; /* soft gold accent */
+  color: #d4af37;
 }
