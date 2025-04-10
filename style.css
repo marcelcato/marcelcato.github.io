@@ -398,7 +398,7 @@ a:hover {
 }
 
 .nav-signature img {
-  height: 26px; /* was 22px before */
+  height: 30px; /* was 22px before */
   opacity: 0.85;
   margin: 0 14px;
   transition: transform 0.3s ease, opacity 0.3s ease;
