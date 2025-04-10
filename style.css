@@ -382,3 +382,9 @@ a:hover {
     transform: translateY(8px);
   }
 }
+
+/* === NAVBAR ACTIVE SECTION HIGHLIGHT === */
+.nav-link.active {
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
