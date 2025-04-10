@@ -348,3 +348,20 @@ a:hover {
   line-height: 1.5;
 }
 
+/* === CARD ANIMATION GLOW FADE === */
+@keyframes glowFade {
+  0% {
+    box-shadow: none;
+    border-color: transparent;
+  }
+  100% {
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.25);
+    border-color: #d4af37;
+  }
+}
+
+.highlighted {
+  animation: glowFade 0.8s ease forwards;
+}
+
+
