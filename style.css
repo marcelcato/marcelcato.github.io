@@ -364,4 +364,21 @@ a:hover {
   animation: glowFade 0.8s ease forwards;
 }
 
+/* === SCROLL DOWN ARROW === */
+.scroll-arrow {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-top: 20px;
+  animation: arrowBounce 2s infinite;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
 
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
