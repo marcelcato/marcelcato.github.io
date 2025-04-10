@@ -59,13 +59,13 @@
 <body>
   <!-- === FLOATING NAVIGATION BAR === -->
   <nav class="floating-nav">
-    <ul>
-      <li><a href="#">Biography</a></li>
-      <li><a href="#">My Vision</a></li>
-      <li><a href="#">Experience</a></li>
-      <li><a href="#">Education</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li><a href="#about" class="nav-link">Biography</a></li>
+    <li><a href="#">My Vision</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#">Education</a></li>
+  </ul>
+</nav>
 
   <!-- === HERO IMAGE WITH OVERLAY TEXT === -->
   <section class="hero-full">
@@ -187,6 +187,31 @@
     }, 3000);
   });
 </script>
-  
+
+<script>
+  // Scroll-linked nav highlight
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 80;
+      const sectionId = current.getAttribute("id");
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${sectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
