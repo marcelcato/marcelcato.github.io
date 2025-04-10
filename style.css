@@ -388,3 +388,23 @@ a:hover {
   color: #d4af37;
   border-bottom: 2px solid #d4af37;
 }
+
+
+/* === NAV SIGNATURE IN NAVBAR === */
+.nav-signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-signature img {
+  height: 30px;
+  opacity: 0.85;
+  margin: 0 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-signature img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
