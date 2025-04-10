@@ -118,5 +118,23 @@
       });
     });
   </script>
+  <script>
+  // Auto-scroll to About section and trigger animation
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const about = document.querySelector('#about');
+      if (about) {
+        about.scrollIntoView({ behavior: 'smooth' });
+
+        // Delay class activation just after scroll lands
+        setTimeout(() => {
+          about.classList.add('visible');
+          about.classList.add('highlighted');
+        }, 800); // Adjust for scroll completion timing
+      }
+    }, 1600); // Initial wait after page load
+  });
+</script>
+  
 </body>
 </html>
