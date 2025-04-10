@@ -26,6 +26,7 @@
     <div class="hero-overlay animated-overlay">
       <h1 class="hero-name">Marcel Cato</h1>
       <p class="hero-tagline">Politics Student @ NYU • Aspiring Diplomat • Public Servant</p>
+      <div class="scroll-arrow" id="scroll-arrow">&#8595;</div>
     </div>
   </section>
 
@@ -119,20 +120,25 @@
     });
   </script>
   <script>
-  // Auto-scroll to About section and trigger animation
   window.addEventListener('load', () => {
     setTimeout(() => {
       const about = document.querySelector('#about');
+      const arrow = document.getElementById('scroll-arrow');
+
       if (about) {
         about.scrollIntoView({ behavior: 'smooth' });
 
-        // Delay class activation just after scroll lands
+        // Trigger animation after scroll
         setTimeout(() => {
           about.classList.add('visible');
           about.classList.add('highlighted');
-        }, 800); // Adjust for scroll completion timing
+          if (arrow) {
+            arrow.style.opacity = '0';
+            arrow.style.pointerEvents = 'none';
+          }
+        }, 1200);
       }
-    }, 1600); // Initial wait after page load
+    }, 3000);
   });
 </script>
   
