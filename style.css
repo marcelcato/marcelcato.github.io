@@ -408,3 +408,49 @@ a:hover {
   transform: scale(1.05);
   opacity: 1;
 }
+
+
+/* === EDUCATION PAGE STYLING === */
+.edu-card {
+  background-color: #ffffff;
+  color: #18171C;
+  border: 1px solid #d6d9db;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 650px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.edu-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #1c2c48;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+/* === ACTIVE NAV LINK HIGHLIGHT === */
+.floating-nav a.active {
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+/* === Signature in Nav Bar === */
+.nav-signature {
+  height: 30px;
+  opacity: 0.6;
+  margin: 0 20px;
+}
+
