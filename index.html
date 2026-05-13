@@ -3,221 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcel Cato – Politics @ NYU</title>
-  <meta name="description" content="Official site of Marcel Cato – Politics student at NYU, aspiring diplomat and public leader." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Marcel Cato | NYU Politics & Urban Planning | Public Service</title>
+  <meta name="description" content="Official website of Marcel Cato, a Politics and Urban Planning student at New York University focused on public service, urban governance, civic administration, and institutional leadership." />
+  <link rel="canonical" href="https://marcelcato.github.io/" />
+  <meta property="og:title" content="Marcel Cato | NYU Politics & Urban Planning | Public Service" />
+  <meta property="og:description" content="Official website of Marcel Cato, a Politics and Urban Planning student at New York University focused on public service, urban governance, civic administration, and institutional leadership." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://marcelcato.github.io/" />
+  <meta property="og:image" content="https://marcelcato.github.io/hero-full.png" />
+  <meta property="og:site_name" content="Marcel Cato" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marcel Cato | NYU Politics & Urban Planning | Public Service" />
+  <meta name="twitter:description" content="Official website of Marcel Cato, a Politics and Urban Planning student at New York University focused on public service, urban governance, civic administration, and institutional leadership." />
+  <meta name="twitter:image" content="https://marcelcato.github.io/hero-full.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon-cato.png" type="image/png">
-  
-  <!-- Structured Data -->
+  <link rel="icon" href="favicon-cato.png" type="image/png" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Marcel Cato",
-    "image": "https://marcelcato.github.io/profile.png",
-    "url": "https://marcelcato.github.io",
-    "jobTitle": "Politics Student",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "NYU Stern School of Business – DART"
-    },
-    "memberOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "New York University"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Uncommon Collegiate Charter High School"
-    },
+    "url": "https://marcelcato.github.io/",
+    "image": "https://marcelcato.github.io/hero-full.png",
+    "jobTitle": "Politics and Urban Planning Student",
+    "description": "Marcel Cato is a New York University Politics student with a focus in urban planning and civic institutions. His work spans institutional administration, election operations, nonprofit communications, and systems that support practical public service.",
+    "memberOf": [
+      {"@type": "CollegeOrUniversity", "name": "New York University"},
+      {"@type": "Organization", "name": "NYU Stern School of Business – Development and Alumni Relations"},
+      {"@type": "Organization", "name": "New City Parks"},
+      {"@type": "Organization", "name": "New York City Board of Elections"},
+      {"@type": "Organization", "name": "NYU Parliamentary Debaters Union"}
+    ],
     "affiliation": [
-      {
-        "@type": "Organization",
-        "name": "Find Community Connection Project"
-      },
-      {
-        "@type": "Organization",
-        "name": "NYU Stern School of Business – DART"
-      },
-      {
-        "@type": "Organization",
-        "name": "New York City Board of Elections"
-      }
+      {"@type": "CollegeOrUniversity", "name": "New York University"},
+      {"@type": "Organization", "name": "NYU Stern School of Business – Development and Alumni Relations"},
+      {"@type": "Organization", "name": "New City Parks"},
+      {"@type": "Organization", "name": "New York City Board of Elections"},
+      {"@type": "Organization", "name": "NYU Parliamentary Debaters Union"}
     ],
-    "award": [
-      "Most Professional Member – FCCP (2024)",
-      "City Council Citation for Outstanding Citizenship – Hon. Rita Joseph (2024)"
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/in/marcelcato"
-    ],
-    "description": "Marcel Cato is a Politics student at NYU focused on diplomacy and public service. He has served in donor relations, nonprofit leadership, IT administration, and election facilitation, with recognitions from the NYC Council and FCCP for civic impact and professionalism."
+    "sameAs": ["https://www.linkedin.com/in/marcelcato"]
   }
   </script>
 </head>
-
 <body>
-  <!-- === FLOATING NAVIGATION BAR === -->
-  <nav class="floating-nav">
-  <ul>
-    <li><a href="#about" class="nav-link">Biography</a></li>
-    <li><a href="#">My Vision</a></li>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header>
+    <nav class="site-nav glass" aria-label="Primary navigation">
+      <a href="#top" class="nav-link" data-section="top">Home</a>
+      <a href="#biography" class="nav-link" data-section="biography">Biography</a>
+      <a href="#platform" class="nav-link" data-section="platform">Platform</a>
+      <img src="signature.png" alt="Marcel Cato signature" class="nav-signature" />
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Signature insert -->
-    <li class="nav-signature">
-      <img src="signature.png" alt="Marcel Cato Signature" />
-    </li>
-
-    <li><a href="#experience" class="nav-link">Experience</a></li>
-    <li><a href="#">Education</a></li>
-  </ul>
-</nav>
-
-  <!-- === HERO IMAGE WITH OVERLAY TEXT === -->
-  <section class="hero-full">
-    <div class="hero-overlay animated-overlay">
-      <h1 class="hero-name">Marcel Cato</h1>
-      <p class="hero-tagline">Politics Student @ NYU • Aspiring Diplomat • Public Servant</p>
-      <div class="scroll-arrow" id="scroll-arrow">&#8595;</div>
-    </div>
-  </section>
-
-  <!-- === NYC TRANSITION BANNER === -->
-  <section class="nyc-banner">
-    <div class="nyc-overlay">
-      <h2>Rooted in New York. Reaching for the World.</h2>
-    </div>
-  </section>
-
-  <!-- === MAIN PAGE CONTENT CONTAINER === -->
-  <div class="container">
-    <!-- About Me Card -->
-    <section class="fade-in highlight-on-scroll card-box" id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a Politics student at NYU, passionate about public service, diplomacy, and equitable urban development.
-        As a first-generation college student from a single-parent immigrant household, I've grown committed to building systems that nurture potential.
-        I’ve worked across nonprofit leadership, alumni relations, and election operations — each step preparing me for a future in public leadership.
-      </p>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="fade-in card-box" id="experience">
-      <h2>Experience</h2>
-
-      <div class="job-card">
-        <h3>Student Intern <span>– NYU Stern School of Business (DART)</span></h3>
-        <p>Supported donor records, event logistics, and alumni communications at one of NYU's top development offices.</p>
-      </div>
-
-      <div class="job-card">
-        <h3>Vice President <span>– Find Community Connection Project</span></h3>
-        <p>Managed donor relationships, led civic drives, and handled high-level outreach to NYC leaders including the Borough President.</p>
-      </div>
-
-      <div class="job-card">
-        <h3>Election Worker <span>– NYC Board of Elections</span></h3>
-        <p>Facilitated smooth, accessible, and compliant voting operations in underserved districts.</p>
-      </div>
-
-      <div class="job-card">
-        <h3>College Access Fellow <span>– Uncommon Collegiate</span></h3>
-        <p>Guided 50+ students through college application prep, personal statements, and trust-building advisement.</p>
+  <main id="main-content" class="site-main">
+    <section id="top" class="hero-section">
+      <div class="hero-backdrop"></div>
+      <div class="hero-panel glass reveal">
+        <p class="eyebrow">OFFICIAL SITE OF MARCEL CATO</p>
+        <h1>Marcel Cato</h1>
+        <p class="hero-line">Public Service. Urban Governance. Institutional Leadership.</p>
+        <p class="hero-subheading">Politics and Urban Planning at New York University, rooted in New York City and preparing for a wider public-service career across government, cities, and civic institutions.</p>
+        <div class="chip-row">
+          <span class="chip">NYU Politics &amp; Urban Planning</span><span class="chip">New York City</span><span class="chip">Public Service</span><span class="chip">Washington, DC Preparation</span>
+        </div>
+        <div class="action-row">
+          <a class="btn btn-primary" href="#experience">View Experience</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
       </div>
     </section>
-  </div>
 
-  <!-- === CATO LOGO SEAL === -->
-  <a href="https://marcelcato.github.io" class="cato-seal" aria-label="Back to Home">
-    <img src="favicon-cato.png" alt="Cato Logo">
-  </a>
-
-  <!-- === FOOTER SECTION === -->
-  <footer class="footer">
-    <div class="footer-content">
-      <img src="signature.png" alt="Marcel Cato Signature" class="signature" />
-      <img src="favicon-cato.png" alt="Cato Logo" class="logo" />
-      <p>Connect with me:</p>
-      <div class="footer-links">
-        <a href="resume.pdf" target="_blank">Resume</a>
-        <a href="https://www.linkedin.com/in/marcelcato" target="_blank">LinkedIn</a>
-        <a href="mailto:marcelcatowrk@gmail.com">Email Me</a>
+    <section class="section reveal" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="eyebrow">CREDIBILITY</p><h2 id="work-title">The Work in View</h2>
+        <p>A developing public-service profile across civic operations, institutional administration, urban planning, and communications strategy.</p>
       </div>
-    </div>
+      <div class="proof-grid">
+        <article class="glass card"><h3>Public &amp; Civic Operations</h3><p>Experience supporting election administration, nonprofit initiatives, and public-facing civic work in New York City.</p></article>
+        <article class="glass card"><h3>Urban Governance &amp; Planning</h3><p>Academic and professional focus on cities, public space, transportation, housing, infrastructure, and the institutions that make urban life work.</p></article>
+        <article class="glass card"><h3>Institutional Administration</h3><p>Administrative experience with confidential records, donor relations, event logistics, internal reporting, and professional correspondence.</p></article>
+        <article class="glass card"><h3>Communications &amp; Systems</h3><p>Built websites, content systems, outreach strategies, and organizational tools that make public-facing work clearer and more effective.</p></article>
+      </div>
+    </section>
+
+    <section id="biography" class="section bio-section reveal" aria-labelledby="bio-title">
+      <div>
+        <p class="eyebrow">BIOGRAPHY</p><h2 id="bio-title">A public-service profile rooted in New York.</h2>
+        <p>Marcel Cato is a New York University student studying Politics with a developing focus in urban planning, public administration, and civic institutions. His work spans university administration, nonprofit leadership, election operations, public communications, and organizational systems-building.</p>
+        <p>Rooted in New York City, his professional direction centers on capable government, well-managed cities, practical public service, and institutions that help people participate more fully in civic life.</p>
+        <div class="chip-row"><span class="chip">Politics, NYU</span><span class="chip">Urban Planning Focus</span><span class="chip">Dean’s List</span><span class="chip">Public Service &amp; Civic Operations</span></div>
+      </div>
+      <aside class="glass bio-visual" aria-label="Identity marks"><img src="signature.png" alt="Marcel Cato signature mark"><img src="favicon-cato.png" alt="Cato seal"></aside>
+    </section>
+
+    <section id="platform" class="section reveal" aria-labelledby="platform-title">
+      <div class="section-head">
+        <p class="eyebrow">PRINCIPLES</p><h2 id="platform-title">Platform</h2><p>The public commitments guiding the work.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="glass card"><span class="index">01</span><h3>Capable Institutions</h3><p>Public trust depends on institutions that are competent, reliable, transparent, and worthy of the responsibilities they hold.</p></article>
+        <article class="glass card"><span class="index">02</span><h3>Cities That Work</h3><p>Urban policy should focus on the daily systems people actually rely on: housing, mobility, public space, infrastructure, safety, and quality of life.</p></article>
+        <article class="glass card"><span class="index">03</span><h3>Civic Dignity</h3><p>Public service should treat people as citizens with agency, not as abstractions. Good governance begins with respect for the people it serves.</p></article>
+        <article class="glass card"><span class="index">04</span><h3>Disciplined Leadership</h3><p>Serious public work requires preparation, restraint, standards, and follow-through.</p></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal" aria-labelledby="experience-title">
+      <div class="section-head"><p class="eyebrow">RECORD</p><h2 id="experience-title">Experience</h2><p>A record of work across institutions, communities, and public-facing systems.</p></div>
+      <div class="timeline">
+        <article class="glass case-card"><p class="pill">Communications / Public Space / Community Storytelling</p><h3>New City Parks — Communications Intern</h3><p class="date">June 2025 – August 2025</p><p>Supported a communications overhaul for a parks-focused nonprofit, building a more cohesive public-facing strategy across design, short-form video, community storytelling, and outreach.</p><h4>What it built</h4><ul><li>Developed and executed a 12-week content plan.</li><li>Produced graphics, Reels, and short-form video for parks initiatives.</li><li>Conducted interviews and shaped resident-centered storytelling.</li><li>Canvassed and translated field input into planning-oriented recommendations.</li><li>Presented strategy proposals and supported office/community events.</li></ul></article>
+        <article class="glass case-card"><p class="pill">Institutional Administration / Donor Relations</p><h3>NYU Stern School of Business – Development and Alumni Relations — Undergraduate Office Assistant</h3><p class="date">September 2024 – Present</p><p>Supports administrative operations in a professional university advancement office, working with confidential records, donor information, event logistics, reports, and correspondence.</p><h4>What it built</h4><ul><li>Maintains and organizes donor records through Blackbaud CRM.</li><li>Processes confidential documents and supports internal reporting.</li><li>Helps coordinate logistics for donor engagement and alumni events.</li><li>Manages inquiries through professional phone and email communication.</li></ul></article>
+        <article class="glass case-card"><p class="pill">Leadership / Operations / Systems-Building</p><h3>NYU Parliamentary Debaters Union — Vice President of Operations</h3><p class="date">May 2025 – Present</p><p>Runs operational systems for NYU’s debate union, supporting logistics, planning, funding coordination, communications, and digital infrastructure.</p><h4>What it built</h4><ul><li>Managed meeting and tournament logistics.</li><li>Supported funding and operational planning.</li><li>Developed strategies for organizational efficiency and growth.</li><li>Designed, developed, and maintained the club’s website and IT functions.</li></ul></article>
+        <article class="glass case-card"><p class="pill">Civic Operations / Election Administration</p><h3>New York City Board of Elections — Election Worker</h3><p class="date">August 2024 – Present</p><p>Supports democratic participation through in-person voting operations, assisting with orderly, accessible, and compliant election procedures.</p><h4>What it built</h4><ul><li>Facilitated polling-site operations.</li><li>Assisted voters in public-facing environments.</li><li>Supported accessible voting procedures in low-income neighborhoods.</li><li>Developed familiarity with the administrative side of democracy.</li></ul></article>
+        <article class="glass case-card"><p class="pill">Nonprofit Leadership / Government Outreach</p><h3>Find Community Connection Project — Office Intern, Field Manager, and Group Leader</h3><p class="date">July 2024 – August 2024</p><p>Supported nonprofit administration, donor relations, event logistics, and external stakeholder coordination for community initiatives in Brooklyn.</p><h4>What it built</h4><ul><li>Represented the organization in discussions with local elected offices.</li><li>Tracked donor communications and maintained records.</li><li>Drafted professional correspondence and organized project documents.</li><li>Coordinated meetings and helped execute community events.</li><li>Provided Google Workspace and basic software support.</li></ul></article>
+        <article class="glass case-card case-card-secondary"><p class="pill">Technical Support / Administration</p><h3>Brooklyn Technical High School — IT Department Intern</h3><p class="date">April 2023 – May 2023</p><p>Supported school IT operations through software, hardware, documentation, and administrative assistance.</p></article>
+      </div>
+    </section>
+
+    <section class="transition-banner reveal" aria-label="New York to Washington transition">
+      <div class="glass banner-panel"><h2>Rooted in New York. Preparing for Washington. Built for public service.</h2><p>The next stage is about turning preparation into presence: government, planning, policy, and the work of public institutions.</p></div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal" aria-labelledby="contact-title">
+      <article class="glass contact-panel"><h2 id="contact-title">Professional Contact</h2><p>For opportunities related to public service, urban planning, policy, institutional administration, communications strategy, or civic leadership, please use the links below.</p><div class="action-row"><a class="btn btn-primary" href="mailto:marcelcatowrk@gmail.com">Email Marcel</a><a class="btn" href="https://www.linkedin.com/in/marcelcato" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Résumé</a></div><div class="contact-marks"><img src="signature.png" alt="Marcel Cato signature"><img src="favicon-cato.png" alt="Cato seal"></div></article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="signature.png" alt="Marcel Cato signature" class="signature" />
+    <img src="favicon-cato.png" alt="Cato seal" class="logo" />
+    <p>© 2026 Marcel Cato</p>
+    <div class="footer-links"><a href="resume.pdf" target="_blank" rel="noopener">Resume</a><a href="https://www.linkedin.com/in/marcelcato" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:marcelcatowrk@gmail.com">Email</a><a href="education.html">Education</a><a href="#top">Return to top</a></div>
   </footer>
 
-  <!-- === SCRIPT === -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const faders = document.querySelectorAll('.fade-in');
-      faders.forEach((el, i) => {
-        setTimeout(() => {
-          el.classList.add('visible');
-        }, i * 150);
+    const links = document.querySelectorAll('.nav-link[data-section]');
+    const sections = [...document.querySelectorAll('section[id]')];
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          links.forEach((link) => link.classList.toggle('active', link.dataset.section === id));
+        }
       });
+    }, { rootMargin: '-30% 0px -55% 0px' });
+    sections.forEach((section) => observer.observe(section));
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("highlighted");
-          } else {
-            entry.target.classList.remove("highlighted");
-          }
-        });
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
-
-      document.querySelectorAll(".highlight-on-scroll").forEach(el => {
-        observer.observe(el);
-      });
-    });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
   </script>
-  <script>
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      const about = document.querySelector('#about');
-      const arrow = document.getElementById('scroll-arrow');
-
-      if (about) {
-        about.scrollIntoView({ behavior: 'smooth' });
-
-        // Trigger animation after scroll
-        setTimeout(() => {
-          about.classList.add('visible');
-          about.classList.add('highlighted');
-          if (arrow) {
-            arrow.style.opacity = '0';
-            arrow.style.pointerEvents = 'none';
-          }
-        }, 1200);
-      }
-    }, 3000);
-  });
-</script>
-
-<script>
-  // Scroll-linked nav highlight
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  window.addEventListener("scroll", () => {
-    let scrollY = window.pageYOffset;
-
-    sections.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 80;
-      const sectionId = current.getAttribute("id");
-
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        navLinks.forEach(link => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${sectionId}`) {
-            link.classList.add("active");
-          }
-        });
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
