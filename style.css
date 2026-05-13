@@ -43,8 +43,7 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 .card h3 { margin-top: 0; }
 .bio-section { display: grid; grid-template-columns: 1.4fr .9fr; gap: 1.1rem; align-items: stretch; }
 .bio-visual { display: grid; place-content: center; gap: 1rem; padding: 1.5rem; }
-.bio-visual img:first-child { max-width: 220px; }
-.bio-visual img:last-child { width: 72px; justify-self: center; }
+.bio-visual img { width: min(100%, 360px); border-radius: 12px; object-fit: cover; justify-self: center; }
 .timeline { position: relative; display: grid; gap: 1rem; margin-left: .8rem; }
 .timeline::before { content: ""; position: absolute; left: -0.8rem; top: .3rem; bottom: .3rem; width: 2px; background: linear-gradient(var(--gold), rgba(185,146,59,.1)); }
 .case-card { padding: 1.15rem 1.2rem; }
