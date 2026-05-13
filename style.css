@@ -92,7 +92,7 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
   display: block;
   width: 100%;
   max-height: min(52vh, 420px);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2800 / 697;
   object-fit: cover;
   object-position: center 46%;
   border-radius: 14px;
