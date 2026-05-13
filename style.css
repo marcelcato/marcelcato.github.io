@@ -37,6 +37,47 @@ h1 { margin: 0; font-size: clamp(2.2rem, 8vw, 4.8rem); line-height: 1.08; }
 .btn-primary { background: linear-gradient(180deg, #c39a3d, #a77a25); border-color: #b9923b; color: #1a1306; font-weight: 700; }
 .section { width: min(1120px, calc(100% - 1.5rem)); margin: 0 auto; padding: 4rem 0; }
 .section-head p { color: var(--muted); margin-top: .4rem; }
+
+.credibility-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 350px);
+  gap: 1.2rem;
+  align-items: start;
+}
+.credibility-copy { min-width: 0; }
+.credibility-key-photo {
+  margin: 0;
+  padding: .75rem;
+  border-radius: 20px;
+  position: sticky;
+  top: 6.5rem;
+  box-shadow: 0 18px 40px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.13);
+  overflow: hidden;
+}
+.credibility-key-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(130deg, rgba(255,255,255,.16), rgba(255,255,255,0) 26%, rgba(185,146,59,.14));
+  pointer-events: none;
+}
+.credibility-key-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: center 34%;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.24);
+}
+.credibility-key-photo figcaption {
+  margin: .7rem .2rem .2rem;
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #d8cfbd;
+}
 h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 .proof-grid, .platform-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .card { padding: 1.1rem; }
@@ -140,10 +181,11 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 }
 
 @media (max-width: 860px) {
-  .proof-grid, .platform-grid, .bio-section, .contact-layout { grid-template-columns: 1fr; }
+  .proof-grid, .platform-grid, .bio-section, .contact-layout, .credibility-layout { grid-template-columns: 1fr; }
   .case-card-media { grid-template-columns: 1fr; }
   .case-image-portrait img { aspect-ratio: 16 / 9; object-position: center 35%; }
   .platform-photo { margin-left: 0; }
+  .credibility-key-photo { position: static; max-width: 360px; justify-self: center; width: 100%; }
   .contact-panel { text-align: center; }
   .contact-copy { text-align: center; }
   .contact-copy .action-row, .contact-marks { justify-content: center; }
