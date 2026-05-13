@@ -107,6 +107,12 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
   align-items: start;
 }
 .case-content { min-width: 0; }
+
+.case-card-media-reverse {
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 320px);
+}
+.case-card-media-reverse .case-content { order: 1; }
+.case-card-media-reverse .case-image { order: 2; }
 .case-image {
   margin: 0;
   display: grid;
@@ -190,6 +196,7 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
   .proof-grid, .platform-grid, .bio-section, .contact-layout { grid-template-columns: 1fr; }
   .proof-grid .credibility-key-photo { grid-column: auto; grid-row: auto; }
   .case-card-media { grid-template-columns: 1fr; }
+  .case-card-media-reverse .case-content, .case-card-media-reverse .case-image { order: initial; }
   .case-image-portrait img { aspect-ratio: 16 / 9; object-position: center 35%; }
   .platform-photo { margin-left: 0; }
   .credibility-key-photo { position: static; max-width: 360px; justify-self: center; width: 100%; }
