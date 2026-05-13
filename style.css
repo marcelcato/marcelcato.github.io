@@ -69,8 +69,24 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 .card:hover, .case-card:hover { transform: translateY(-3px); transition: transform .25s ease; }
 .index { color: var(--gold); font-weight: 700; font-size: .82rem; letter-spacing: .08em; }
 
+.platform-photo {
+  margin: 1rem 0 0 auto;
+  width: min(100%, 460px);
+  padding: .5rem;
+  border-radius: 18px;
+}
+.platform-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.16);
+}
+
 @media (max-width: 860px) {
   .proof-grid, .platform-grid, .bio-section { grid-template-columns: 1fr; }
+  .platform-photo { margin-left: 0; }
 }
 @media (max-width: 640px) {
   .site-nav { gap: .1rem; }
