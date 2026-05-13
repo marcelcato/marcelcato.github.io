@@ -52,6 +52,33 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 .date { color: var(--muted); font-size: .92rem; }
 .case-card h4 { margin-bottom: .35rem; }
 .case-card ul { margin: .2rem 0 0 1.1rem; padding: 0; }
+
+.case-card-media {
+  display: grid;
+  grid-template-columns: minmax(210px, 320px) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+.case-content { min-width: 0; }
+.case-image {
+  margin: 0;
+  display: grid;
+  gap: .55rem;
+}
+.case-image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.2);
+  object-fit: cover;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+.case-image-portrait img { aspect-ratio: 9 / 16; object-position: center 28%; }
+.case-image-landscape img { aspect-ratio: 16 / 9; object-position: center; }
+.case-image figcaption {
+  font-size: .75rem;
+  color: #d7cfbe;
+  line-height: 1.4;
+}
 .case-card-secondary { opacity: .95; }
 .transition-banner { min-height: 48vh; background: linear-gradient(rgba(10,10,12,.5), rgba(10,10,12,.82)), url('nyc-banner.jpg') center/cover no-repeat; display: grid; place-items: center; }
 .banner-panel { max-width: 900px; padding: 1.4rem; text-align: center; }
@@ -108,6 +135,8 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 
 @media (max-width: 860px) {
   .proof-grid, .platform-grid, .bio-section { grid-template-columns: 1fr; }
+  .case-card-media { grid-template-columns: 1fr; }
+  .case-image-portrait img { aspect-ratio: 16 / 9; object-position: center 35%; }
   .platform-photo { margin-left: 0; }
 }
 @media (max-width: 640px) {
