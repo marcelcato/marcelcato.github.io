@@ -23,7 +23,7 @@ a { color: inherit; text-decoration: none; }
 .nav-link.active, .nav-link:hover { color: var(--text); background: rgba(185,146,59,.2); }
 .nav-signature { height: 24px; margin: 0 .4rem; opacity: .9; }
 .site-main { padding-top: 5.8rem; }
-.hero-section { min-height: 95vh; background: linear-gradient(rgba(12,12,15,.45), rgba(12,12,15,.9)), url('hero-full.png') center/cover no-repeat; display: grid; place-items: center; padding: 3rem 1rem; position: relative; }
+.hero-section { min-height: 95vh; background: linear-gradient(rgba(12,12,15,.45), rgba(12,12,15,.9)), url('hero-full.png') center 35%/cover no-repeat; display: grid; place-items: center; padding: 3rem 1rem; position: relative; }
 .hero-backdrop { position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(185,146,59,.2), transparent 50%); }
 .hero-panel { position: relative; width: min(920px, 100%); padding: clamp(1.5rem, 3vw, 2.8rem); }
 .eyebrow { font-size: .77rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); margin: 0 0 .4rem; font-weight: 700; }
