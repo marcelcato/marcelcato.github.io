@@ -96,6 +96,7 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
 .case-card { padding: 1.15rem 1.2rem; }
 .pill { display: inline-block; font-size: .73rem; text-transform: uppercase; letter-spacing: .08em; color: #ebddb8; border: 1px solid rgba(185,146,59,.4); padding: .25rem .55rem; border-radius: 999px; }
 .case-card h3 { margin: .55rem 0 .2rem; }
+.case-card .role { margin: 0; color: #efe8d7; font-weight: 700; }
 .date { color: var(--muted); font-size: .92rem; }
 .case-card h4 { margin-bottom: .35rem; }
 .case-card ul { margin: .2rem 0 0 1.1rem; padding: 0; }
@@ -132,6 +133,24 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); margin: 0; }
   color: #d7cfbe;
   line-height: 1.4;
 }
+.experience-highlight {
+  border-color: rgba(185,146,59,.58);
+  background: linear-gradient(145deg, rgba(185,146,59,.16), rgba(18,18,22,.82) 42%);
+  box-shadow: 0 18px 45px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.12);
+}
+.experience-highlight .case-image img { border-color: rgba(226,184,88,.55); }
+.latest-label {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin: 0 0 .65rem;
+  color: #f0d38c;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.latest-label::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(185,146,59,.16); }
 .case-card-secondary { opacity: .95; }
 .transition-banner { min-height: 48vh; background: linear-gradient(rgba(10,10,12,.5), rgba(10,10,12,.82)), url('nyc-banner.jpg') center/cover no-repeat; display: grid; place-items: center; }
 .banner-panel { max-width: 900px; padding: 1.4rem; text-align: center; }
